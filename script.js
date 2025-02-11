@@ -1,5 +1,5 @@
 const messages = [
-  "Will you be my Valentine? 💝",
+  "Bes, will you be my Valentine? 💝",
   "You know you want to say yes! 🌹",
   "The Yes button is working perfectly! ✨",
   "Take your time (but not too long!) 🌟",
@@ -13,6 +13,22 @@ const message = document.querySelector(".message");
 const proposal = document.getElementById("proposal");
 const success = document.getElementById("success");
 const container = document.querySelector(".floating-hearts");
+
+function sendEmail() {
+  emailjs
+    .send("service_3z1rikt", "template_0dk809a", {
+      to_email: "ivanlopez6491@gmail.com",
+      message: "She said yes bro! 🎉💕",
+    })
+    .then(
+      function (response) {
+        console.log("Email sent successfully!", response);
+      },
+      function (error) {
+        console.log("Failed to send email:", error);
+      }
+    );
+}
 
 function createHeart() {
   const heart = document.createElement("div");
@@ -57,6 +73,7 @@ function handleNo() {
 }
 
 function handleYes() {
+  sendEmail();
   proposal.style.display = "none";
   success.style.display = "flex";
 

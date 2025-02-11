@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.svg" />
     <title>Will you be my Valentine?</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("DtgGuocBz2k748hBk");
+      })();
+    </script>
   </head>
   <body>
     <svg style="display: none">
@@ -19,12 +25,10 @@
     </svg>
     <div class="container">
       <div class="floating-hearts"></div>
-      <div class="message">
-        Sorry, this button is under construction, come back later! 😊
-      </div>
+      <div class="message">Sorry, this button is under construction😤</div>
       <div class="content" id="proposal">
         <img src="assets/start.gif" alt="mariela cutie" class="img-start" />
-        <h1 class="title">--- 💝</h1>
+        <h1 class="title">Bes, will you be my Valentine? 💝</h1>
         <div class="buttons">
           <button class="btn btn-yes" onclick="handleYes()">Yes!</button>
           <button class="btn btn-no" onclick="handleNo()">No</button>
@@ -32,8 +36,8 @@
       </div>
       <div class="content success" id="success">
         <img src="assets/end.gif" alt="mariela cutie" class="img-start" />
-        <h1 class="title">Yay! It's a date! 🎉</h1>
-        <p>I'm so excited! I'll make it special for you! ❤️</p>
+        <h1 class="title">Yay! It's a simple date! 🎉💘</h1>
+        <p>The details will be revealed later! ♡⸜(˶˃ ᵕ ˂˶)⸝♡</p>
       </div>
     </div>
   </body>

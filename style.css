@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -24,7 +24,6 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgb(255, 249, 249);
-  border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 2rem;
@@ -123,7 +122,7 @@ body {
   padding: 1rem 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  animation: bounce 1s infinite;
+  animation: bounce 3s infinite;
   display: none;
   z-index: 2;
 }
